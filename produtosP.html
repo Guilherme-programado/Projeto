@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                h1 {
+            color: brown;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(10, 5, 5);
+        }
+
+        ul {
+            padding: 0;
+            text-align: center;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #333;
+            display: block;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+ 
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+            z-index: 999;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-color: rgb(201, 201, 201);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0a2df0;
+            color: white;
+        }
+
+        td img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        header {
+            background-color: rgba(6, 60, 236, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+     
+        nav {
+            display: inline-block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>imagem</th>
+            <th>Descrição</th>
+        </tr>
+
+        <tr>
+            <td><br>Café três corações 500g <br> R$ 20,99</td>
+            <td><a href="https://www.americanas.com.br/produto/1818524396/cafe-almofada-tradicional-500g-tres-coracoes?pfm_carac=cafe&pfm_index=3&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=6385ffed42e8459f0f98d1e6"><img src="img/cafe.png" alt="café"></a></td>
+            <td>Café tostado com grãos selecionados</td>
+        </tr>
+
+        <tr>
+            <td><br>Leite Piracanjuba 1L <br> R$ 6,59</td>
+            <td><a href="https://www.araujo.com.br/leite-longa-vida-piracanjuba-integral-1-litro/66592.html?gclid=CjwKCAjwmaO4BhAhEiwA5p4YL5ynwkC9YBKphczs2ch2hbLrkQCxINQP30vQLOiiS1DCZaacd9MG5hoCiQEQAvD_BwE"><img src="img/leite.png" alt="Leite"></a></td>
+            <td>Leite integral</td>
+        </tr>
+
+        <tr>
+            <td><br> Achocolatado Nescau 370g <br> R$ 8,79</td>
+            <td><a href="https://www.docesvaz.com.br/achocolatado-em-po-nescau-370g-lata-nestle--772102/p"><img src="img/nescau.png" alt="Nescau"></a></td>
+            <td>Achocolatado adoçado </td>
+        </tr>
+
+        <tr>
+            <td><br> Leite em Pó Ninho 800g <br> R$ 14,00</td>
+            <td><a href="https://www.magazineluiza.com.br/leite-em-po-integral-ninho-forti-800g/p/226006500/me/lepo/"><img src="img/ninho.png" alt="Ninnho"></a></td>
+            <td>Leite em Pó integral </td>
+        </tr>
+
+        <tr>
+            <td><br> Salgadinho Ruffles 115g <br> R$ 12,99</td>
+            <td><a href="https://www.americanas.com.br/produto/3309232601/batata-frita-ondulada-original-elma-chips-ruffles-pacote-115g?pfm_carac=rufles&pfm_index=6&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=6385061f42e8459f0f0cac17"><img src="img/salgadinho.png" alt="Salgadinho"></a></td>
+            <td>Salgadinho de Batata </td>
+        </tr>
+        <tr>
+            <td><br> Desodorante Rexona 150ml <br> R$ 15,99</td>
+            <td><a href="https://www.americanas.com.br/produto/127837131/desodorante-rexona-masculino-v8-150ml?pfm_carac=rexona-v8&pfm_index=1&pfm_page=search&pfm_pos=grid&pfm_type=search_page&offerId=5fc2b7fc762ff367195e8467&buyboxToken=smartbuybox-acom-v2-2f5e14e2-705a-492b-bf6d-f49a83f8734c-2024-10-11%2013%3A35%3A30%200000-none-default&cor=Única&condition=NEW"><img src="img/rexona-v8.png" alt="Rexona"></a></td>
+            <td>Desodorante Rexona não te abandona </td>
+        </tr>
+        <tr>
+            <td><br> Amaciante Downy 1,5L <br> R$ 41,90</td>
+            <td><a href="https://www.sages.com.br/limpeza/lavanderia/amaciantes/amaciante-concentrado-downy-lirios-do-campo-1-5l"><img src="img/amaciante.png" alt="Amaciante"></a></td>
+            <td>Amaciante Downy Lavanda</td>
+        </tr>
+        <tr>
+            <td><br> Papel Higiênico 16 rolos <br> R$ 27,99</td>
+            <td><a href="https://www.coopsupermercado.com.br/papel-higienico-folha-dupla-neve-leve16-pague-15-30-metros-s/p"><img src="img/Papel higienico.png" alt="Papel Higiênico"></a></td>
+            <td>Papel Higiênico 16 rolos </td>
+        </tr>
+        <tr>
+            <td><br> Kit kit kat 24 Unidades <br> R$ 91,90</td>
+            <td><a href="https://www.extrafesta.com.br/chocolate-kit-kat-nestle-caixa-1kg"><img src="img/Kit kit kat.png" alt="Chocolate kit kat"></a></td>
+            <td>Kit Chocolate kit kat </td>
+        </tr>
+        <tr>
+            <td><br>Pepsi 2L <br> R$ 7,46</td>
+            <td><a href="https://www.choppbrahmaexpress.com.br/refrigerante-pepsi-black-zero-2l/p"><img src="img/pepsi.png" alt="Danoninho"></a></td>
+            <td> Refrigerante Pepsi </td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>

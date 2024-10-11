@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Usuário</title>
+    <style>
+        body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                    color: #333;
+                    background-image:url(img/alteração\ de\ produtos.jpg)
+                }
+                header {
+                    background-color: #848484;
+                    color: white;
+                    text-align: center;
+                    padding: px 0;
+                }
+                .Texto {
+                    max-width: 1000px;
+                    margin: 20px auto;
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                }
+                h2 {
+                    color: #313335;
+                    margin-bottom: 10px;
+                }
+        
+                footer {
+                    text-align: center;
+                    padding: 3px 0;
+                    background-color:  #848484;
+                    color: white;
+                    position: relative;
+                    bottom: 0;
+                    width: 100%;
+                }
+                li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #333;
+            display: block;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+ 
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+            z-index: 999;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-color: rgb(201, 201, 201);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0a2df0;
+            color: white;
+        }
+
+        td img {
+            max-width: 120px;
+            height: auto;
+        }
+
+        header {
+            background-color: rgba(6, 60, 236, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+     
+        nav {
+            display: inline-block;
+            margin: 0 auto;
+        }
+    
+        
+            </style>
+
+</head>
+<body>
+    
+       
+
+            
+    <header>
+        <h1> <h1 style="font-size: 48px; color: white; background: linear-gradient(90deg, #1518c0, #fcd708); padding: 10px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+
+         <h1> Consulta de Dados do Usuário</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a>
+            <ul>
+
+            <li><a href="index.html">Login</a></li>
+            <li><a href="menu.html">Tela Inicial</a></li>
+            <li><a href="alterar.html">Alterar Dados</a></li>
+            <li><a href="deletar.html">Deletar Usuário</a></li>
+            <li><a href="cadastro.html">Cadastrar Usuário</a></li>
+            </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <br>
+    <br>
+
+
+
+
+    <form action="consulta.php" method="post">
+
+        <label for="Nome"> Digite um nome do usuário</label>
+        <input type="text" name="nome" placeholder="Digite o nome do Usuário"required>
+
+        <input type="submit" name="submit" value="Consultar" >
+        <img src="img/lupa.png" alt="lupa" width="" height="15">
+   
+        <br>
+        <br>
+
+
+    </form>
+
+    <footer>
+        <p> Supermercado MIG SUPERMARKET</p>
+    </footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+img {
+    max-width: 100%; /* A imagem ocupará no máximo 100% da largura disponível */
+    height: auto;    /* A altura será ajustada automaticamente para manter a proporção */
+    display: block;  /* Remove qualquer espaço extra abaixo da imagem */
+    margin: 0 auto;  /* Centraliza a imagem horizontalmente */
+}
